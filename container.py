@@ -1,10 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-'''
-Created on 2016-09-09 上午10:12
-@author: chenyongbing
-@file: container.py
-'''
+
 import os , re ,etcd , time , json , commands
 import logging
 from etcd import EtcdKeyNotFound
@@ -354,11 +350,11 @@ def main():
     action_create.add_argument("--containers", help=u"start docker num", default=1, type=int)
 
 
-    # args = parser.parse_args("create --docker_server http://192.168.17.230:8080?username=admin&password=kashuotest123456 --etcd 192.168.17.230:14001 --env dev --project centos --tag latest".split(' '))
-    # args = parser.parse_args("--docker_server http://192.168.17.230:8080?username=admin&password=kashuotest123456 --etcd 192.168.17.230:14001 --env dev --project centos start".split(' '))
-    # args = parser.parse_args("--docker_server http://192.168.17.230:8080?username=admin&password=kashuotest123456 --etcd 192.168.17.230:14001 --env dev --project kop-server stop".split(' '))
-    # args = parser.parse_args("--docker_server http://192.168.17.230:8080?username=admin&password=kashuotest123456 --etcd 192.168.17.230:14001 --env dev --project kop-server delete".split(' '))
-    # args = parser.parse_args("--docker_server http://192.168.17.230:8080?username=admin&password=kashuotest123456 --etcd 192.168.17.230:14001 --env dev --project kop-server delete".split(' '))
+    # args = parser.parse_args("create --docker_server http://192.168.17.230:8080?username=admin&password=123456 --etcd 192.168.17.230:14001 --env dev --project centos --tag latest".split(' '))
+    # args = parser.parse_args("--docker_server http://192.168.17.230:8080?username=admin&password=123456 --etcd 192.168.17.230:14001 --env dev --project centos start".split(' '))
+    # args = parser.parse_args("--docker_server http://192.168.17.230:8080?username=admin&password=123456 --etcd 192.168.17.230:14001 --env dev --project kop-server stop".split(' '))
+    # args = parser.parse_args("--docker_server http://192.168.17.230:8080?username=admin&password=123456 --etcd 192.168.17.230:14001 --env dev --project kop-server delete".split(' '))
+    # args = parser.parse_args("--docker_server http://192.168.17.230:8080?username=admin&password=123456 --etcd 192.168.17.230:14001 --env dev --project kop-server delete".split(' '))
     # args = parser.parse_args("create --help".split(' '))
     # args = parser.parse_args("--help".split(' '))
     args = parser.parse_args()
